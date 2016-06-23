@@ -190,7 +190,7 @@ function save_config( )
 end
 
 -- Returns the config from config.lua file.
--- If file doesn't exist, create it.
+-- If file doesn't exst, create it.
 function load_config( )
   local f = io.open('./data/config.lua', "r")
   -- If config.lua doesn't exist
@@ -212,7 +212,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"admin",
+	"admin",U
     "onservice",
     "inrealm",
     "ingroup",
@@ -232,7 +232,7 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {135164371,111137366,198834049,tonumber(our_id)},--Sudo users
+    sudo_users = { 205816573 ,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[Hello To GameOver 
  Baray Amozesh command ha be channel: @gameoverantispam 
